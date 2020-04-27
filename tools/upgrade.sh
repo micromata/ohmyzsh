@@ -31,10 +31,10 @@ git config receive.fsck.zeroPaddedFilemode ignore
 resetAutoStash=$(git config --bool rebase.autoStash 2>&1)
 git config rebase.autoStash true
 
-# Update upstream remote to ohmyzsh org
+# Update old upstream remote to correct repo
 remote=$(git remote -v | awk '/https:\/\/github\.com\/robbyrussell\/oh-my-zsh\.git/{ print $1; exit }')
 if [ -n "$remote" ]; then
-  git remote set-url "$remote" "https://github.com/ohmyzsh/ohmyzsh.git"
+  git remote set-url "$remote" "https://github.com/micromata/ohmyzsh.git"
 fi
 
 printf "${BLUE}%s${NORMAL}\n" "Updating Oh My Zsh"

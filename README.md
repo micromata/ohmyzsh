@@ -14,7 +14,7 @@ Finally, you'll begin to get the sort of attention that you have always felt you
 
 To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow [@ohmyzsh](https://twitter.com/ohmyzsh) on Twitter, and/or join us on Discord.
 
-[![CI](https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
+[![CI](https://github.com/micromata/ohmyzsh/workflows/CI/badge.svg)](https://github.com/micromata/ohmyzsh/actions?query=workflow%3ACI)
 [![Follow @ohmyzsh](https://img.shields.io/twitter/follow/ohmyzsh?label=Follow+@ohmyzsh&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
 [![Discord server](https://img.shields.io/discord/642496866407284746)](https://discord.gg/bpXWhnN)
 
@@ -34,13 +34,13 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 #### via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/micromata/ohmyzsh/master/tools/install.sh)"
 ```
 
 #### via wget
 
 ```shell
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/micromata/ohmyzsh/master/tools/install.sh)"
 ```
 
 #### Manual inspection
@@ -50,7 +50,7 @@ that by downloading the install script first, looking through it so everything l
 then running it:
 
 ```shell
-curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/micromata/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
 
@@ -58,7 +58,7 @@ sh install.sh
 
 ### Plugins
 
-Oh My Zsh comes with a shitload of plugins to take advantage of. You can take a look in the [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's currently available.
+Oh My Zsh comes with a shitload of plugins to take advantage of. You can take a look in the [plugins](https://github.com/micromata/ohmyzsh/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's currently available.
 
 #### Enabling Plugins
 
@@ -99,7 +99,7 @@ _Robby's theme is the default one. It's not the fanciest one. It's not the simpl
 Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
 
 ```shell
-ZSH_THEME="robbyrussell"
+ZSH_THEME="mm_bureau"
 ```
 
 To use a different theme, simply change the value to match the name of your desired theme. For example:
@@ -128,7 +128,7 @@ And if you want to pick random theme from a list of your favorite themes:
 
 ```shell
 ZSH_THEME_RANDOM_CANDIDATES=(
-  "robbyrussell"
+  "mm_bureau"
   "agnoster"
 )
 ```
@@ -171,14 +171,14 @@ flag `--unattended` to the `install.sh` script. This will have the effect of not
 the default shell, and also won't run `zsh` when the installation has finished.
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/micromata/ohmyzsh/master/tools/install.sh)" "" --unattended
 ```
 
 #### Installing from a forked repository
 
 The install script also accepts these variables to allow installation of a different repository:
 
-- `REPO` (default: `ohmyzsh/ohmyzsh`): this takes the form of `owner/repository`. If you set
+- `REPO` (default: `micromata/ohmyzsh`): this takes the form of `owner/repository`. If you set
   this variable, the installer will look for a repository at `https://github.com/{owner}/{repository}`.
 
 - `REMOTE` (default: `https://github.com/${REPO}.git`): this is the full URL of the git repository
@@ -202,7 +202,7 @@ REPO=apjanke/oh-my-zsh BRANCH=edge sh install.sh
 ##### 1. Clone the repository:
 
 ```shell
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+git clone https://github.com/micromata/ohmyzsh.git ~/.oh-my-zsh
 ```
 
 ##### 2. *Optionally*, backup your existing `~/.zshrc` file:
@@ -284,7 +284,7 @@ Before you participate in our delightful community, please read the [code of con
 
 I'm far from being a [Zsh](https://www.zsh.org/) expert and suspect there are many ways to improve – if you have ideas on how to make the configuration easier to maintain (and faster), don't hesitate to fork and send pull requests!
 
-We also need people to test out pull-requests. So take a look through [the open issues](https://github.com/ohmyzsh/ohmyzsh/issues) and help where you can.
+We also need people to test out pull-requests. So take a look through [the open issues](https://github.com/micromata/ohmyzsh/issues) and help where you can.
 
 See [Contributing](CONTRIBUTING.md) for more details.
 
