@@ -14,10 +14,6 @@ Finally, you'll begin to get the sort of attention that you have always felt you
 
 To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow [@ohmyzsh](https://twitter.com/ohmyzsh) on Twitter, and/or join us on Discord.
 
-[![CI](https://github.com/micromata/ohmyzsh/workflows/CI/badge.svg)](https://github.com/micromata/ohmyzsh/actions?query=workflow%3ACI)
-[![Follow @ohmyzsh](https://img.shields.io/twitter/follow/ohmyzsh?label=Follow+@ohmyzsh&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
-[![Discord server](https://img.shields.io/discord/642496866407284746)](https://discord.gg/bpXWhnN)
-
 ## Getting Started
 
 ### Prerequisites
@@ -93,8 +89,6 @@ Most plugins (should! we're working on this) include a __README__, which documen
 We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki. Check them out!
 
 #### Selecting a Theme
-
-_Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
 
 Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
 
